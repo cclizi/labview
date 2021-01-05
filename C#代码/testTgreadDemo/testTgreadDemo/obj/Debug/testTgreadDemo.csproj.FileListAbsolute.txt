@@ -1,0 +1,7 @@
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\bin\Debug\testTgreadDemo.exe.config
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\bin\Debug\testTgreadDemo.exe
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\bin\Debug\testTgreadDemo.pdb
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\obj\Debug\testTgreadDemo.csprojAssemblyReference.cache
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\obj\Debug\testTgreadDemo.csproj.CoreCompileInputs.cache
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\obj\Debug\testTgreadDemo.exe
+F:\git项目\labview\C#代码\testTgreadDemo\testTgreadDemo\obj\Debug\testTgreadDemo.pdb

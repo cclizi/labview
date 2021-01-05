@@ -1,0 +1,10 @@
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\bin\Debug\TEST_MDI_DEMO.exe.config
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\bin\Debug\TEST_MDI_DEMO.exe
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\bin\Debug\TEST_MDI_DEMO.pdb
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.csprojAssemblyReference.cache
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.Form1.resources
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.Properties.Resources.resources
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.csproj.GenerateResource.cache
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.csproj.CoreCompileInputs.cache
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.exe
+F:\git项目\labview\C#代码\TEST_MDI_DEMO\TEST_MDI_DEMO\obj\Debug\TEST_MDI_DEMO.pdb
