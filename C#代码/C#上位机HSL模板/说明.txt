@@ -1,0 +1,10 @@
+2012.11.29  修改多帧接收的代码，intptr分配多帧内存空间
+IntPtr pt = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(VCI_CAN_OBJ)) * 50);
+
+20121126  修改波特率下拉框为droplist
+
+20121012  修改接收多帧，使用不安全代码,添加 PCI -EU的下拉框选择
+
+20120301 修改为USBCAN-E-U 测试
+
+20120301 提交到版本库 测试usbcan
