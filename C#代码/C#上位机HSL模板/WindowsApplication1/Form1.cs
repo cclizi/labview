@@ -492,19 +492,13 @@ namespace WindowsApplication1
                         Falgsh1(guzhang);
                         Falgsh2(guzhang1);
 
-                        //波形显示
+                        //外部输出电压，电流，功率，输入电压数据进入队列
                         x1.Enqueue(uint.Parse(textBox_SR_I.Text));
                         x2.Enqueue(uint.Parse(textBox_SC_V.Text));
                         x3.Enqueue(uint.Parse(textBox_SC_I.Text));
                         x4.Enqueue((uint.Parse(textBox_SC_V.Text) * uint.Parse(textBox_SC_I.Text))/1000);
                         y1++;
                         n.Enqueue(y1);
-                        //zGraph_wb.f_ClearAllPix();
-                        //zGraph_wb.f_reXY();
-                        //zGraph_wb.f_LoadOnePix(ref x1, ref n, Color.Red, 2);
-                        //zGraph_wb.f_AddPix(ref x2, ref n, Color.Blue, 4);
-                        //zGraph_wb.f_AddPix(ref x3, ref n, Color.Green, 4);
-                        //zGraph_wb.f_AddPix(ref x4, ref n, Color.Green, 4);
                         break;
 
                     case "1801a0d1":
@@ -514,19 +508,13 @@ namespace WindowsApplication1
                         textBox_Ibat.Text = System.Convert.ToString((Convert.ToUInt16((obj.Data[4] << 8) + obj.Data[5]) - 10000) * 0.1);
                         textBox_Vbus.Text = System.Convert.ToString((Convert.ToUInt16((obj.Data[6] << 8) + obj.Data[7]) - 10000) * 0.1);
 
-                        //波形显示
+                        //进入队列
                         x9.Enqueue(uint.Parse(textBox_Vat.Text));
                         x10.Enqueue(uint.Parse(textBox_Vin.Text));
                         x11.Enqueue(uint.Parse(textBox_Ibat.Text));
                         x12.Enqueue(uint.Parse(textBox_Vbus.Text));
                         y1++;
                         n.Enqueue(y1);
-                        //zGraph_NB.f_ClearAllPix();
-                        //zGraph_NB.f_reXY();
-                        //zGraph_NB.f_LoadOnePix(ref x9, ref n, Color.Red, 2);
-                        //zGraph_NB.f_AddPix(ref x10, ref n, Color.Blue, 4);
-                        //zGraph_NB.f_AddPix(ref x11, ref n, Color.Green, 4);
-                        //zGraph_NB.f_AddPix(ref x12, ref n, Color.DarkCyan, 4);
                         break;
 
                     case "1802a0d1":
@@ -537,19 +525,13 @@ namespace WindowsApplication1
                         textBox_Vout.Text = System.Convert.ToString((Convert.ToUInt16((obj.Data[6] << 8) + obj.Data[7]) - 10000) * 0.1);
 
 
-                        //波形显示
+                        //进入队列
                         x12.Enqueue(uint.Parse(textBox_AI.Text));
                         x13.Enqueue(uint.Parse(textBox_BI.Text));
                         x14.Enqueue(uint.Parse(textBox_Iout.Text));
                         x15.Enqueue(uint.Parse(textBox_Vout.Text));
                         y1++;
                         n.Enqueue(y1);
-                        
-                        //zGraph_NB.f_reXY();
-                        //zGraph_NB.f_LoadOnePix(ref x12, ref n, Color.Red, 2);
-                        //zGraph_NB.f_AddPix(ref x13, ref n, Color.Blue, 4);
-                        //zGraph_NB.f_AddPix(ref x14, ref n, Color.Green, 4);
-                        //zGraph_NB.f_AddPix(ref x15, ref n, Color.RoyalBlue, 4);
                         break;
 
                     case "1803a0d1":
@@ -565,13 +547,7 @@ namespace WindowsApplication1
                         x17.Enqueue(float.Parse(textBox_NSC_P.Text));
                         
                         y1++;
-                        n.Enqueue(y1);
-                       
-                        //zGraph_wb.f_reXY();
-                        //zGraph_wb.f_LoadOnePix(ref x16, ref n, Color.Red, 2);
-                        //zGraph_wb.f_AddPix(ref x17, ref n, Color.Blue, 4);
-                       
-
+                        n.Enqueue(y1);  
                         break;
 
                     case "1804a0d1":
@@ -588,20 +564,14 @@ namespace WindowsApplication1
                         Falgsh5(guzhang5);
 
 
-                        //波形显示
+                        //进入队列
                         x18.Enqueue(uint.Parse(textBox_WD1.Text));
                         x19.Enqueue(uint.Parse(textBox_WD2.Text));
                         x20.Enqueue(uint.Parse(textBox_WD3.Text));
                         x21.Enqueue(uint.Parse(textBox_WD4.Text));
                         y1++;
                         n.Enqueue(y1);
-                      
-                        //zGraph_NB.f_reXY();
-                        //zGraph_NB.f_LoadOnePix(ref x18, ref n, Color.Red, 2);
-                        //zGraph_NB.f_AddPix(ref x19, ref n, Color.Blue, 4);
-                        //zGraph_NB.f_AddPix(ref x20, ref n, Color.Green, 4);
-                        //zGraph_NB.f_AddPix(ref x21, ref n, Color.Gainsboro, 4);
-
+                     
                         break;
                     case "c0ba79a":  //48V
 
@@ -612,21 +582,13 @@ namespace WindowsApplication1
                         byte[] guzhang6 = System.BitConverter.GetBytes(obj.Data[7]);
                         //判断故障
                         Falgsh6(guzhang6);
-
-
-                        //波形显示
+                        //进入队列
                         x5.Enqueue(uint.Parse(textBox_48VSC_V.Text));
                         x6.Enqueue(uint.Parse(textBox_48VSC_I.Text));
                         x7.Enqueue(uint.Parse(textBox_48VSR_V.Text));
                         x8.Enqueue(uint.Parse(textBox_48VWD.Text));
                         y1++;
                         n.Enqueue(y1);
-                        //zGraph_48V.f_ClearAllPix();
-                        //zGraph_48V.f_reXY();
-                        //zGraph_48V.f_LoadOnePix(ref x5, ref n, Color.Red, 2);
-                        //zGraph_48V.f_AddPix(ref x6, ref n, Color.Blue, 4);
-                        //zGraph_48V.f_AddPix(ref x7, ref n, Color.Green, 4);
-                        //zGraph_48V.f_AddPix(ref x8, ref n, Color.DarkGreen, 4);
                         break;
                 }
                
@@ -1611,53 +1573,45 @@ namespace WindowsApplication1
 
           if(n.Count >= 100)
             {
-                float m = n.Dequeue();
+                float m = n.Dequeue(); //数组输出X轴
                 Console.WriteLine(n.Count);
                 //HSL动态数据
                 ChartPointCollection points = hslChart1.Series[0].Points;
                 points.Add(new HslControls.Charts.ChartPoint(m, m));
                 ChartPointCollection points2 = hslChart1.Series[1].Points;
                 points2.Add(new HslControls.Charts.ChartPoint(m+10, m-10));
-
-
-
-
-                cartesianChart1.Series = new LiveCharts.SeriesCollection
-           {
-                new LineSeries
-                {
-                    Values = new ChartValues<ObservablePoint>
-                    {
-                        new ObservablePoint(m,m)
-
-
-                    },
-                    PointGeometrySize = 15
-                },
-                 new LineSeries
-                {
-                    Values = new ChartValues<ObservablePoint>
-                    {
-                        new ObservablePoint(m*10,m*100)
-
-                    },
-                    PointGeometrySize = 15
-                }
-            };
-
-            }
-
-            for(int i = 0; i < n.Count; i++)
-            {
+                //Zgraph
                 //zGraph_wb.f_reXY();
-                //zGraph_wb.f_LoadOnePix(ref n.Dequeue(), ref n, Color.Red, 2);
-                //zGraph_wb.f_AddPix(ref n, ref n, Color.Blue, 4);
+                //zGraph_wb.f_LoadOnePix(ref m, ref m, Color.Red, 2);
+                //zGraph_wb.f_AddPix(ref m, ref m, Color.Blue, 4);
+
+                //HZH
+               // ucWaveChart1.AddSource(m.ToString(), m);
+                ucWaveChart1.AddSource(m.ToString(), m*10);
 
 
+                //chart
+                //设置X轴名称
+                chart1.ChartAreas[0].AxisX.Title = "时间（1格100ms）";
+                //外部曲线
+                //第一条曲线
+                if(x1.Count != 0)
+                  chart1.Series[0].Points.AddXY(m, x1.Dequeue());
+                //第二条曲线
+                if (x2.Count != 0)
+                    chart1.Series[1].Points.AddXY(m, x2.Dequeue());
+                //第三条曲线
+                if (x16.Count != 0)
+                    chart1.Series[2].Points.AddXY(m, x16.Dequeue());
+                //第四条曲线
+                if (x4.Count != 0)
+                    chart1.Series[3].Points.AddXY(m, x4.Dequeue());
 
 
 
             }
+
+           
 
         }
     }
