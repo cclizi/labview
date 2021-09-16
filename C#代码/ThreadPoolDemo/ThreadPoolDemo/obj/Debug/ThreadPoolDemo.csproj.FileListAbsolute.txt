@@ -1,7 +1,0 @@
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\bin\Debug\ThreadPoolDemo.exe.config
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\bin\Debug\ThreadPoolDemo.exe
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\bin\Debug\ThreadPoolDemo.pdb
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\obj\Debug\ThreadPoolDemo.csprojAssemblyReference.cache
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\obj\Debug\ThreadPoolDemo.csproj.CoreCompileInputs.cache
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\obj\Debug\ThreadPoolDemo.exe
-F:\git项目\labview\C#代码\ThreadPoolDemo\ThreadPoolDemo\obj\Debug\ThreadPoolDemo.pdb
